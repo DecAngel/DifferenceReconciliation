@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse; /* 移除表格内边框间的间隙 */
+    }
+    </style>
+    <title>差异调节表分析</title>
+</head>
+<body>
+    <table>
+        {% for name, amount in form %}
+        <tr>
+            <td>{{ name }}</td>
+            <td>{{ amount }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
